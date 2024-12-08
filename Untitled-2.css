@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffefba, #ffffff);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form, .animation, button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+form button, #testLuck {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover, #testLuck:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+.animation {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
